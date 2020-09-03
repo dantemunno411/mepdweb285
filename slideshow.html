@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- https://www.w3schools.com/howto/howto_js_slideshow.asp -->
+
+    <style>
+      body {
+        font-family: Verdana, sans-serif;
+      }
+      .mySlides {
+        display: none;
+      }
+      img {
+        vertical-align: middle;
+      }
+
+      /* Slideshow container */
+      .slideshow-container {
+        width: 100%; /*play with scale to alter layout*/
+        margin: auto; /*centers the content*/
+        /* try playing with placement:
+        float: left;
+        float: right;
+        */
+      }
+
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+
+      @keyframes fade {
+        from {
+          opacity: 0.4;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img src="img/covid1.png" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/covid2.png" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/covid3.png" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/covid4.png" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/covid5.png" style="width:100%" />
+      </div>
+
+      <div class="mySlides fade">
+        <img src="img/covid6.png" style="width:100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/covid7.png" style="width:100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/covid8.png" style="width:100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/covid9.png" style="width:100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/covid10.png" style="width:100%" />
+      </div>
+      <div class="mySlides fade">
+        <img src="img/covid11.png" style="width:100%" />
+      </div>
+    </div>
+
+    <script>
+      // create variable to index the slides - to track the slides
+      var slideIndex = 0;
+      // call a function that does something with the slides
+      showSlides();
+
+      function showSlides() {
+        // a variable to be used in the for loop - i for "index"
+        var i;
+        // target the slides in the DOM as slides
+        var slides = document.getElementsByClassName("mySlides");
+        // loop through the slides showing them one at a time (display)
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none"; //none hides the slides
+        }
+        // increment the slides from 0 to the total number of slides (for loop)
+        slideIndex++;
+        // loop back to the beginning
+        if (slideIndex > slides.length) {
+          slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block"; //show the slide
+        setTimeout(showSlides, 2000); // Change image every 2 seconds
+      }
+    </script>
+
+  </body>
+</html>
