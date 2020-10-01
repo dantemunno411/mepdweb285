@@ -1,0 +1,113 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initital-scale=1">
+
+    <title>CSS Positions</title>
+    <!--
+    position: static; - default - is not positioned in any special way; it is always positioned according to the normal flow of the page.
+    position: relative; is positioned relative to its normal position, relative to itself.
+    position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled.
+    position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed). However; if an absolute positioned element has no positioned ancestors, it uses the document body, and moves along with page scrolling.
+    position: sticky; is positioned based on the user's scroll position. A sticky element toggles between relative and fixed, depending on the scroll position. It is positioned relative until a given offset position is met in the viewport
+    -->
+    <style>
+      * {box-sizing: border-box;}
+      #main {
+        border: 2px solid black;
+      }
+      .boxLeft {
+        margin: 15px;
+        padding: 20px 10px 20px 15px;
+        border: 2px solid #999;
+        background-color: orange;
+        width: 400px;
+        float: left;
+      }
+      .boxRight {
+        margin: 15px;
+        padding: 2rem;
+        border: 2px solid #999;
+        background-color: grey;
+        width: 400px;
+        float: right;
+      }
+      .boxBoth {
+        margin: 15px;
+        padding: 2rem;
+        border: 2px solid #999;
+        background-color: blue;
+        width: 400px;
+        clear: both;
+      }
+      .boxAbsolute {
+        margin: 15px;
+        padding: 2rem;
+        border: 2px solid #999;
+        height: 0px;
+        width: 0px;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 0px;
+      }
+      .boxFixed {
+        /*margin: 15px;*/
+        padding: 2rem;
+        border: 2px solid #999;
+        background-color: purple;
+        width: 400px;
+        position: fixed;
+        bottom: 0px;
+        right: 0px;
+        z-index: 10;
+      }
+
+    </style>
+      <link href="rules.css" rel="stylesheet">
+  </head>
+
+  <body>
+<div id="container">
+    <div id="main">
+
+    <div style="position: relative; border: 1px solid">
+      <p>
+        This is the fixed box.
+      </p>
+    </div>
+
+    <div class="boxLeft">
+      <p>
+        Today I did absolutely nothing. everyday seems to be the same now. I just wake up do homework, eat and sleep.
+      <!--navigation-->
+
+        09-27-2020
+      </p>
+    </div>
+    <div class="boxRight">
+      <p>
+      I just finished homework for class. Muti millions...that's something I want.
+      09-28-2020
+      </p>
+    </div>
+    <div class="boxBoth">
+      <p>
+        <span style="color:red">Lorem ipsum</span> dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
+      </p>
+    </div>
+    <div class="boxAbsolute">
+
+    </div>
+    <div class="boxSticky">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam dapibus augue ac ipsum pellentesque commodo. Sed pellentesque porttitor urna vitae faucibus. Etiam laoreet mi nec leo fermentum egestas. Nam elit urna, tincidunt at cursus quis, maximus ac purus. Nulla feugiat urna eu eros ornare, non sagittis enim congue. Proin feugiat non felis ut interdum. Maecenas pretium efficitur aliquet. Duis scelerisque, magna nec vulputate ultricies, risus diam fermentum ante, quis mattis nunc dui non dolor. In condimentum velit in libero pulvinar aliquet. Nulla facilisi.
+    </p>
+
+    </div>
+
+  </div><!-- this closes main div -->
+
+  </body>
+  </html>

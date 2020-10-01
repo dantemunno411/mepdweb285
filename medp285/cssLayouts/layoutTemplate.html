@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>CSS Layout Template</title>
+
+    <link href="rules.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <div id="container">
+
+    <header>
+      <h1>Header</h1>
+    </header>
+
+    <nav>
+      <h2>Nav</h2>
+      <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+      </ul>
+    </nav>
+
+    <main>
+    <!-- the semantic tag "main" specifies the main content of a document, content unique to that document and should not contain repeating content such as sidebars or navigation or copyright information...-->
+      <h2>Liquid Layout - Using percentages or vw/vh</h2>
+      <p>
+      The main difference is that Fluid Layouts (also called Liquid Layouts) are based on proportionally laying out your website so elements take up the same percent of space on different screen sizes, while Responsive Design uses CSS Media Queries to present different layouts based on screen sizes/type of screen.
+      </p>
+      <p>
+      Fluid's intent is to keep the same spatial weighting to all elements, and works okay on different sizes of screens of the same sort. They tend to look okay on a 32", high resolution monitor and a 12" lower resolution laptop. They're pretty easy to implement.
+      </p>
+      <p>
+      Responsive design's intent is to serve different devices layouts tailored specifically for the type of screen. Your site's layout will generally be cut down to a single column on a smartphone for example.
+      </p>
+
+      <hr>
+
+      <h2>What is Mobile First Design? (from article by Vincent Xia)</h2>
+      <p>
+        To understand the concept of mobile-first design better, you should know the two phrases below first.
+      </p>
+      <h3>1. Responsive Web Design (RWD)</h3>
+      <p>
+      Responsive web design is a web design method that enables web to fit the screens of different devices automatically, displaying the content in a way that people feel comfortable. This greatly reduces users’ operations like panning, zooming and scrolling when browsing the web.
+      </p>
+      <h3>2. "Progressive Advancement" &amp; "Graceful Degradation"</h3>
+      <p>These two concepts were put forward before responsive web design. In order to make web or application interface display reasonably on different devices, designers provide customized versions of product for different ends.
+      </p>
+      <p>
+        Progressive Advancement means that when we design a product, first we build a version for the relatively lower browser (like that on a mobile phone). This version includes the most basic functions & features. After that, we tend to the advanced version for a tablet or PC, which is created by adding interactions, more complicated effects, etc. on the basic version for a better user experience.
+      </p>
+      <p>
+        "Graceful Degradation", on the contrary, starts the product design from an advanced end like desktop and builds a version with well-rounded features at the beginning. Then designers make the product compatible with mobile ends by cutting some functions or contents.
+      </p>
+      <p>
+        Progressive Advancement has won the game for now as far as I can see. If UI/UX designers start a product design with its desktop version, they will inevitably want to make use of most of the advantages of the advanced end. For example, the hover effect which is supported by a cursor mouse; HD images & complex charts which can display normally only when there is a recent bandwidth. In this way, the designers will make efforts to complete an amazing desktop version and only to find it can hardly be adopted on a mobile end unless they give up a lot of beautiful ideas. If so, the mobile end version will be more like an afterthought, an incomplete product which's been watered down.
+      </p>
+      <p>
+        But if we take the mobile end product design as a starting point, under the restrictions like bandwidth, screen size and so on, designers will naturally seize the key points of a product, head for a lean & neat product with prioritized features. When the platform is expanded to a tablet or PC, designers are able to take advantages of the unique features of these advanced ends to strengthen the product step by step. This might be the main reason that progressive advancement strategy is widely used.
+        <br><a href="https://medium.com/@Vincentxia77/what-is-mobile-first-design-why-its-important-how-to-make-it-7d3cf2e29d00" target="_blank">Read the full article</a>
+      </p>
+    </main>
+
+    <aside>
+      <h2>Side Column</h2>
+    </aside>
+
+    <footer>
+      <h3>Footer</h3>
+    </footer>
+
+  </div> <!--close container-->
+
+</body>
+</html>
