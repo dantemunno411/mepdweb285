@@ -3,109 +3,154 @@
     <head>
       <meta charset="utf-utf-8" />
       <title>Dante Munno MEDP 285 Page</title>
-      <link rel="stylesheet" href="style.css" >
-<link rel="shortcut icon" type="image/png" href="img/favicona.png" />
+      <link rel="apple-touch-icon" sizes="57x57" href="img/apple-icon-57x57.png">
+      <link rel="apple-touch-icon" sizes="60x60" href="img/apple-icon-60x60.png">
+      <link rel="apple-touch-icon" sizes="72x72" href="img/apple-icon-72x72.png">
+      <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon-76x76.png">
+      <link rel="apple-touch-icon" sizes="114x114" href="img/apple-icon-114x114.png">
+      <link rel="apple-touch-icon" sizes="120x120" href="img/apple-icon-120x120.png">
+      <link rel="apple-touch-icon" sizes="144x144" href="img/apple-icon-144x144.png">
+      <link rel="apple-touch-icon" sizes="152x152" href="img/apple-icon-152x152.png">
+      <link rel="apple-touch-icon" sizes="180x180" href="img/apple-icon-180x180.png">
+      <link rel="icon" type="image/png" sizes="192x192"  href="img/android-icon-192x192.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="img/favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="img/favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="img/favicon-16x16.png">
+      <link rel="manifest" href="/manifest.json">
       <meta name="viewport" content="width=device-width,  initial-scale=1" />
       <meta name="description" content="Homepage for my web 1 class" />
       <meta name="author" content="Dante" />
 
       </head>
 
-      <body style="background-color: #BAADE0;">
+      <body style="background-color: #E1D4F7;">
+
 <!--navigation-->
 
-
-
-<header id="Home" style="color: #654FA8">
-
-  <nav id="nav">
-
-    <ul>
       <style>
-* {
-margin: 0;
-padding: 0;
 
+h1 {
+  color: #554275;
 }
 
-nav{
-  width: 100%;
-  height: 100px;
-  background-color: #654FA8;
-
+.navbar {
+  overflow: hidden;
+  background-color: #554275;
+  font-family: Arial, Helvetica, sans-serif;
 }
-      ul {
 
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #B289F5;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #8D6DC2;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #6B6575;
+}
+
+.show {
+  display: block;
+}
+body {
+        background-image: url(img/radio.gif);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        /*
+        center
+        left top
+        left bottom
+        right top
+        right bottom
+        center top
+        center bottom
+        */
+        font-family: sans-serif;
       }
-
-      ul li {
-          list-style: none;
-          position: relative;
-          display: inline-block;
-          float: left;
-          line-height: 100px;
-      }
-
-      ul li a {
-        display: block;
-        text-decoration: none;
-        font-size: 14px;
-        font-family: arial;
-        color: #4C475C;
-        padding: 0 20px;
-      }
-
 
 </style>
-<nav>
-  <li><a href="index.html">Home</a></li>
-  <li><a href="#">Projects</a></li>
-        <ul>
-          <li><a href="slideshow.html">Slideshow</a></li>
-          <li><a href="videoex.html">Video</a></li>
-        </ul>
-  <li><a href="#">About</a></li>
-  <li><a href="#">Contact</a></li>
+</head>
 
-</nav>
+<body>
 
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="about.html">About Me</a>
+  <a href="https://dantemunno.wordpress.com" target="_blank">Blog</a>
+  <div class="dropdown">
+  <button class="dropbtn" onclick="myFunction()">Projects
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-content" id="myDropdown">
+    <a href="slideshow.html">Slideshow</a>
+    <a href="sstwo.html">Slideshow 2</a>
+    <a href="videoex.html">Video Project</a>
+    <a href="interviewsp.html">Interview Project</a>
+    <a href="">Layered Collage</a>
+    <a href="layoutpage.html">Journal Layout</a>
+    <a href="simplegrid.html">Meditaion Layout</a>
+    <a href="projectproposal.html">Project Proposal</a>
+  </div>
 
+<script>
+/* When the user clicks on the button,
+toggle between hiding and showing the dropdown content */
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
 
-        </ul>
-      </nav>
-<h1> <b>Dante's MEDP 285 Homepage </b> </h1>
-
-<!--navigation-->
-  <img srcset="img/header640.jpg 640w,
-              img/header960.jpg 960w,
-              img/header1280.jpg 128w"
-      sizes="(max-width: 640px) 100vw
-      (max-width: 960px) 90vw,
-(max-width: 1280px) 70vw, 1280px"
-    src="img/header1280.jpg" alt="dante's header"
-
-</header>
-
-
-
-
-
-
-        <hr  />
-        <section id="about">
-          <h1>The Page Of Nothing</h1>
-          <p> My <em>Page Of Nothing</em> is a minimalistic web page.
-
-          </p>
-        </section>
-
-      </body>
-          <h1>
-          <h2>Projects</h2>
-          <ol>
-              <li><a href="slideshow.html">Slideshow</a></li>
-              <li><a href="videoex.html">Video</a></li>
-          </ol>
-
-      </body>
-</html>
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(e) {
+  if (!e.target.matches('.dropbtn')) {
+  var myDropdown = document.getElementById("myDropdown");
+    if (myDropdown.classList.contains('show')) {
+      myDropdown.classList.remove('show');
+    }
+  }
+}
+</script>
+  </body>
+  </html>
