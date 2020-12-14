@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title> Dante's Final </title>
+    <meta name="description" content="demonstating the video tag">
+    <meta name="author" content="Dante Munno">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="img/favicon.ico">
+    <link rel="icon" type="image/png" href="img/icon/logo32.png">
+    <style>
+    body { font-family: helvetica, sans-serif;}
+    /* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: rgba(255,255,255,.7);
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 60%;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: red;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  /*background-color: #5cb85c;*/
+  background-image: url("img/marblew.png");
+  color: black;
+}
+
+.modal-body {padding: 2em 4em;}
+
+</style>
+  </head>
+
+    <body background="img/marblew.png">
+
+      <!-- Trigger/Open The Modal -->
+      <button id="myBtn">About</button>
+
+      <div style="margin: auto; width: 50%;">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/S5k361tahRY"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+
+      <!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Crissel Takes Over New York</h2>
+    </div>
+    <div class="modal-body">
+      <p>This short documentary will follow a woman named Crissel Morales, a true entrepreneur who paved her own way in the hair styling industry.  This short documentary will start from her humble beginnings, from where she was born and raised, to earning her hair styling licence, working and styling hair in the back of nail salons, opening her own shop and hiring apprentices and interns, how Covid-19 impact her business, how she was able to adapt and where she is going with "Crissel New York" in the future.</p>
+    </div>
+  </div>
+
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+
+  </body>
+
+</html>
